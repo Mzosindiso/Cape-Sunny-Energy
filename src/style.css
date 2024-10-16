@@ -1,13 +1,251 @@
+/* --Home page -- */
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Raleway:400');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Raleway';
+    font-weight: 400;
+    background-color: #fbfbfe;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5 {
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.210rem; 
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; 
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; 
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; 
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem; 
+  /* 12px */
+}
+
+/*--Services page--*/
+.services-training{
+  margin-top: 50px;
+  margin-left: 170px;
+  display: flex;
+
+}
+.services-training img{
+  height: 351px;
+  width: 482;
+}
+.training{
+  margin-left: 120px;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.services-courses{
+  margin-left: 170px;
+  width: 80%;
+}
+
+.services-courses img{
+  width: 274px;
+  height: 156px;
+  border-radius: 8px;
+}
+.courses{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.course-1{
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  width: 24%;
+  padding: 25px;
+}
+
+.services-installation{
+  margin-left: 170px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.installation{
+  width: 40%;
+}
+.performance{
+  width: 40%;
+  margin-left: 200px;
+}
+
+ol li{
+  padding: 5px;
+}
+
+/*--Log in--*/
+.sign_in{
+  border: 1px solid #D9D9D9;
+  margin-top: 40px;
+  padding: 50px;
+  background-color: white;
+  height: 515px;
+  margin-bottom: 40px;
+}
+form{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 900px;
+  min-width: 320px;
+  height: 720px;
+  left: calc(50% - 790px/2);
+  margin: 5px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.sign_in input[type=email]{
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.sign_in input[type=password]{
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-top: 10px;
+  width: 100%;
+}
+.login-button{
+  width: 70%;
+  color: white;
+  background-color: #040316;
+  padding: 6px;
+  border-radius: 8px;
+  margin-top: 30px;
+  align-self: center;
+}
+.form-links a{
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+  align-items: start;
+  margin-top: 10px;
+  color: #040316;
+}
+#errorMessage{
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  font-size: 12px;
+  background-color: red;
+  padding: 10px;
+  width: 70%;
+}
+
+/*--Registration--*/
+.register{
+  border: 1px solid #D9D9D9;
+  margin-top: 40px;
+  padding: 50px;
+  background-color: white;
+}
+.register input[type=text]{
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.credentials{
+  display: flex;
+  gap: 120px;
+  margin-top: 10px;
+} 
+.register input[type=email]{
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.register input[type=password]{
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-top: 10px;
+  width: max-content;
+}
+.permit{
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+}
+.upload-attachments{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.register textarea{
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  padding: 8px;
+  margin-top: 10px;
+}
+.register-button{
+  width: 70%;
+  color: white;
+  background-color: #040316;
+  padding: 6px;
+  border-radius: 8px;
+  margin-top: 30px;
+  align-self: center;
+}
+
+/*--Reset password--*/
+.reset-button{
+  margin-top: 30px;
+  align-self: center;
+}
+.reset-button a{
+  text-decoration: none;
+  color: black;
+}
+#cancel{
+  color: black;
+  background-color: aliceblue;
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+#reset{
+  color: white;
+  background-color: #040316;
+  padding: 6px;
+  border-radius: 8px;    
 }
